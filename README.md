@@ -1,79 +1,67 @@
-## DAY-1 INTRODUCTION TO VERILOG RTL DESIGN AND SYNTHESIS
-THis is my Day 1 lab works done in the workshop conducted by VLSI System Design. 
+## RTL Design Workshop – 5 Day Overview
 
-Day 1 started with the introduction of working with the verilog files integrated in the library sky130
+The workshop presented a full course in RTL (Register Transfer Level) design and synthesis in Verilog HDL and free tools like Icarus Verilog, GTKWave, and Yosys. The day was organized with an equal mix of concepts and lab sessions so that participants could build up their knowledge and hands-on skills in digital design gradually.
 
-I learnt what is a simulator,Design and Testbench. I had a hands on lab session on working on simulating the 2 to 1 multiplexer
+## Day 1 – Introduction to Verilog and Simulation
 
-Welcome to the opening session of the RTL Workshop!
-Today’s focus is on the basics of Verilog, using Icarus Verilog (iverilog) for simulation, and exploring Yosys for synthesis. Along the way, you’ll understand the role of simulators, testbenches, and how logic gets mapped into real hardware.
+Introduction to Verilog HDL basics and digital design.
+Development of basic modules and testbenches.
 
-## Session Flow
+Simulation with Icarus Verilog and waveform visualization using GTKWave.
 
-Understanding the definitions of a simulator, design, and testbench
+Initial lab experiments with simple combinational circuits.
 
-Introduction to Icarus Verilog and getting started
+## Day 2 – Combinational Logic and Synthesis Fundamentals
 
-Lab exercise: Simulating a 2-to-1 multiplexer
+More in-depth study of combinational logic modeling.
 
-Analyzing the Verilog design
+Structural, dataflow, and behavioral design styles.
 
-Introduction to Yosys and technology libraries
+Yosys synthesis flow introduction and netlisting.
+Labs introduced multiplexers and other logic blocks, with comparison between simulation and synthesis results.
 
-Practical synthesis with Yosys
+## Day 3 – Sequential Logic and Flip-Flops
 
-Key takeaways and summary
+Learning sequential circuits and storage elements.
 
-1. Simulator, Design, and Testbench
+In-depth study of flip-flops (D, JK, T) and their behavioral models.
 
-Simulator: A tool that simulates how your digital circuit functions, so you can verify correctness without real hardware.
+Testing code to watch state changes and timing behavior.
 
-Design: The Verilog description that defines the intended behavior.
+Labs showed synthesis and waveform checking of sequential blocks.
 
-Testbench: A simulation environment that drives test stimuli into your design and verifies the outputs, assisting in the validation of your logic.
+## Day 4 – Finite State Machines (FSMs)
 
-2. Getting Started with Icarus Verilog
+FSM concept and application in digital systems.
 
-Icarus Verilog, commonly referred to as iverilog, is an open-source simulator that is commonly used in the practice of digital design. Its operation is straightforward: you supply both design and testbench, simulate the design, and then view the outputs on a waveform viewer like GTKWave.
+Mealy vs. Moore machines difference.
 
-3. Lab Focus: 2-to-1 Multiplexer
+Synthesizing FSMs in Verilog using state transition logic.
 
-To put things into perspective, the initial working example is a 2:1 multiplexer. The implementation and its associated testbench are simulated with iverilog, and the output is seen in GTKWave to ensure that the logic is working as planned.
-![good_mux](day1/good_mux.jpg)
+Labs involved the implementation of a sequence detector and verification using GTKWave.
 
+## Day 5 – Synthesis Optimization
 
-4. Design Walkthrough
+Coding efficient RTL with if-else, case statements, loops, and generate blocks.
 
-The multiplexer has two data inputs and one select line. The output mirrors whatever input the select signal selects. When the select line is high, the output mirrors the second input; otherwise, it mirrors the first input.
+Avoiding unwanted latch inference through identification.
 
-5. Introduction to Yosys and Gate Libraries
+Utilization of for-loops and generate constructs for scalable design.
 
-Yosys is an open-source synthesis platform that converts Verilog RTL to a gate-level netlist. It also optimizes the design and maps it onto given technology cells available in standard cell libraries.
+Lab highlight: implementation of a Ripple Carry Adder (RCA) employing generate blocks.
 
-Why do libraries contain multiple versions of the same logic gates?
+## Overall Learning Outcomes
 
-To strike a balance between speed, area, and power consumption
+At the end of the 5-day workshop, the participants could:
 
-To accommodate high-speed gates for timing-critical paths
+Understand the basics of RTL design with Verilog HDL.
 
-To employ compact or low-power gates for efficiency
+Simulate designs and waveform analyze with GTKWave.
 
-To accommodate different drive strengths and maintain signal integrity
+Synthesize logic with Yosys and read netlist outputs.
 
-6. RTL-to-Gates with Yosys
+Model combinational and sequential circuits.
 
-Within the synthesis workflow, the Verilog design is loaded into Yosys first, then synthesized to a generic netlist. The design is next mapped onto technology cells of the selected library to produce a real gate-level netlist. Visualization of the synthesized schematic is also supported by Yosys.
-![Yosys](day1/iverilog_good_mux.jpg)
+Design and verify finite state machines.
 
-
-7. Summary of Day 1
-
-Understood the roles of simulators, designs, and testbenches
-
-Ran a first digital simulation with Icarus Verilog and observed results in GTKWave
-
-Reviewed how a simple 2:1 multiplexer operates
-
-Explored what Yosys was used for and why technology libraries matter
-
-Learned how a Verilog RTL description is translated into actual hardware gate
+Implement coding best practices to write clean, optimized, and synthesizable RTL.
