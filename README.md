@@ -39,6 +39,8 @@ Icarus Verilog, commonly referred to as iverilog, is an open-source simulator th
 3. Lab Focus: 2-to-1 Multiplexer
 
 To put things into perspective, the initial working example is a 2:1 multiplexer. The implementation and its associated testbench are simulated with iverilog, and the output is seen in GTKWave to ensure that the logic is working as planned.
+![good_mux](day1/good_mux.jpg)
+
 
 4. Design Walkthrough
 
