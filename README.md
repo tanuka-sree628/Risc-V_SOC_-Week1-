@@ -63,7 +63,7 @@ To accommodate different drive strengths and maintain signal integrity
 6. RTL-to-Gates with Yosys
 
 Within the synthesis workflow, the Verilog design is loaded into Yosys first, then synthesized to a generic netlist. The design is next mapped onto technology cells of the selected library to produce a real gate-level netlist. Visualization of the synthesized schematic is also supported by Yosys.
-![Yosys](/iverilog_good_mux.jpg)
+![Yosys](day1/iverilog_good_mux.jpg)
 
 
 7. Summary of Day 1
