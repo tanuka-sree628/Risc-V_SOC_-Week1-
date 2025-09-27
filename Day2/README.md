@@ -2,7 +2,8 @@
 
 Hello and welcome to Day 2 of the RTL Workshop!
 Today, we are going to work on three prime areas that are crucial for designing for real-world scenarios:
-All the lab screenshots are uploaded in the same folder.
+
+## All the lab screenshots are uploaded in the same folder.
 
 Gaining an understanding of the timing libraries included in open-source PDKs.
 
