@@ -1,4 +1,4 @@
-##Day 2: Timing Libraries, Synthesis Strategies, and Flip-Flop Coding
+## Day 2: Timing Libraries, Synthesis Strategies, and Flip-Flop Coding
 
 Hello and welcome to Day 2 of the RTL Workshop!
 Today, we are going to work on three prime areas that are crucial for designing for real-world scenarios:
@@ -10,7 +10,7 @@ Learning about the differences between hierarchical and flat synthesis technique
 
 Acquiring efficient flip-flop coding styles for sound RTL design.
 
-##Session Flow
+## Session Flow
 
 Timing Libraries and the SKY130 PDK
 
@@ -20,7 +20,7 @@ Efficient Coding for Flip-Flops
 
 Simulation and Synthesis Flow
 
-##Key Takeaways
+## Key Takeaways
 
 1. Timing Libraries and the SKY130 PDK
 
