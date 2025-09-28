@@ -3,6 +3,8 @@
 Welcome to the opening session of the RTL Workshop!
 This is where your journey into digital design begins. Today’s focus is on the basics of Verilog, using Icarus Verilog (iverilog) for simulation, and exploring Yosys for synthesis. Along the way, you’ll understand the role of simulators, testbenches, and how logic gets mapped into real hardware.
 
+## All the lab works doen are uploaded in the same folder
+
 ## Session Flow
 
 Learning what a simulator, design, and testbench are
